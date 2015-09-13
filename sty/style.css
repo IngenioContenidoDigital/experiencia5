@@ -1,0 +1,623 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7/08/2015, 12:07:07 PM
+    Author     : lfelipeqn
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Abel|Oswald|Roboto+Condensed);
+
+/*Oswald - Titulo | font-family: 'Oswald', sans-serif;
+Roboto - Subtitulos | font-family: 'Roboto Condensed', sans-serif;
+Abel - Bloque de Contenido | font-family: 'Abel', sans-serif;*/
+
+@font-face {
+	font-family: "Tall Films Expanded";
+	src: url("../fonts/tall-films-expanded/tall-films-expanded.eot");
+	src: url("../fonts/tall-films-expanded/tall-films-expanded.eot#iefix") format("embedded-opentype"),
+	url("../fonts/tall-films-expanded/tall-films-expanded.woff") format("woff"),
+	url("../fonts/tall-films-expanded/tall-films-expanded.ttf") format("truetype"),
+	url("../fonts/tall-films-expanded/tall-films-expanded.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "digital-7";
+	src: url("../fonts/digital-7/Digital-7.eot");
+	src: url("../fonts/digital-7/Digital-7.eot#iefix") format("embedded-opentype"),
+	url("../fonts/digital-7/Digital-7.woff") format("woff"),
+	url("../fonts/digital-7/Digital-7.eot") format("truetype"),
+	url("../fonts/digital-7/Digital-7.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@-ms-keyframes pelicula { 
+    from{
+        background-position-y: 0px;
+    }to{
+        background-position-y: -1000px;
+    }
+}
+
+@-moz-keyframes pelicula {
+    from{
+        background-position-y: 0px;
+    }to{
+        background-position-y: -1000px;
+    }
+}
+@-webkit-keyframes pelicula { 
+    from{
+        background-position-y: 0px;
+    }to{
+        background-position-y: -1000px;
+    }
+}
+
+@keyframes pelicula { 
+    from{
+        background-position-y: 0px;
+    }to{
+        background-position-y: -1000px;
+    }
+}
+
+a{color:white;}
+h2{font-family: 'Tall Films Expanded'; color:#3e2d1e; font-weight: bold;}
+
+.fondo{
+    background-color: black;
+}
+
+.header{
+    display: table;
+    background-image: url(../img/luces.jpg);
+    margin: 0 auto;
+    height: 200px;
+    width: 100%;
+    background-repeat:repeat-x; 
+    border:none;
+}
+
+
+.center{
+    display: table;
+    margin: 0 auto;
+    border:none;
+}
+
+.center>p{color:white;height: 5px;font-size: 0.8em;font-weight: bold;}
+.center>span{color:white;}
+
+
+.footer{
+    display: table;
+    background-image: url(../img/footer.png);
+    margin: 0 auto;
+    padding:15px;
+    min-height: 183px;
+    width: 100%;
+    /*background-repeat:repeat-y; */
+    border:none;
+}
+
+.logo-footer{margin-top: 25px; border-left: 1px solid lightgray; border-right: 1px solid lightgray; width: 160px;}
+.logo-footer img{position:relative; top: -15px;}
+
+.lista-contacto {
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 20px;
+    float:right;
+}
+
+.lista-contacto li{margin-bottom: 10px;}
+
+.lista-contacto li>span{color:white;display: table-row;}
+
+.lista-contacto li:before {
+    background:url(../img/pointer.png) no-repeat;
+    width:25px;
+    height:25px;
+    display:block;
+    position:absolute;
+    content: "";
+    vertical-align: middle;
+    margin-top: 7px;
+    margin-left: -30px;
+}
+
+.lista-contacto li.contacto:before {
+    background-position: 0px 0px;
+}
+
+.lista-contacto li.redes:before {
+    background-position: -26px 0px;
+}
+
+.lista-contacto li.atenciont:before {
+    background-position: -50px 0px;
+    margin-top: 0px;
+}
+
+.lista-contacto li>span:first-child{font-size: 18px;}
+
+#img-chat{margin-top: 35px;}
+.atencion{color:#e0a93d !important; font-size:1.2em;}
+.servicio{float:left;}
+.menu a{margin-top: 10px; margin-bottom: 10px; font-family: 'Oswald', sans-serif;}
+.altura{min-height: 670px;}
+.carrete{
+    background-image: url(../img/carrete.png);
+    background-repeat: repeat-y;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.left, .center2, .right{display: inline-block;}
+.left{
+    float:left;
+    width: 8%;
+}
+.right{
+    float:right;
+    width: 10%;
+}
+
+.left-inf{
+    float:left;
+    width: 8%;
+    -webkit-animation-name: pelicula;
+    -webkit-animation-duration: 10000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    -moz-animation-name: pelicula;
+    -moz-animation-duration: 10000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    -ms-animation-name: pelicula;
+    -ms-animation-duration: 10000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: pelicula;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.right-inf{
+    float:right;
+    width: 10%;
+    -webkit-animation-name: pelicula;
+    -webkit-animation-duration: 10000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    -moz-animation-name: pelicula;
+    -moz-animation-duration: 10000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    -ms-animation-name: pelicula;
+    -ms-animation-duration: 10000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: pelicula;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.center2{width: 80%;}
+.auditorio{
+    content: "";
+    background-image: url(../img/auditorio.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 122px;
+    bottom: 15px;
+    z-index: -1; 
+}
+.contenido{
+    width: 100%;
+}
+
+.intro{
+    /*background-image: url(../img/intro.gif);*/
+    background-size: 100% 100%;
+    
+}
+
+
+.separador{
+    display: table;
+    content:"";
+    height: 5px;
+    width: 100%;
+    background-color: #4b0800;
+    margin-left: auto;
+    margin-right: auto;
+}
+.centro-logo{
+    text-align: center;
+}
+.cuerpo{
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/fondo-cuerpo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 0px;
+    /*height: 520px; ELIMINAR ESTA LINEA Y QUITAR COMENTARIO EN LA ANTERIOR*/
+    width: 100%;
+    overflow:hidden;
+}
+
+.bienvenida{
+    margin-top: 1%;
+    content: "";
+    border-top: solid gray 2px;
+    width: 62%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bienvenida2{
+    margin-top: 2%;
+    content: "";
+    width: 62%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galeria{
+    margin-top: 2%;
+    content: "";
+    width: 62%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto{
+    background-color: #4a0900;
+    min-height: 150px;
+    width: 100%;
+    padding:18px;
+    padding-left: 50px;
+    margin-bottom: 10px;
+    color:white;
+    overflow: hidden;
+}
+
+.texto div{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+    float:left;
+    width:63%;
+}
+
+.texto div:nth-child(2){
+    float:left;
+    width:100%;
+    maring-top:15px;
+}
+
+.bloque-texto{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2em;
+}
+
+.condiciones{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5em;
+    text-align: justify;
+    height: 150px;
+    width: 85%;
+    padding:20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    color:#4a0900; //Nuevo Color
+}
+
+.vamos{margin-left: 50px;color:#3e280d;font-family:'Oswald', sans-serif; font-size: 2.2em}
+.vamos2{margin-left: 50px;color:#c64832;font-family:'Oswald', sans-serif; font-size: 1.5em; text-transform: uppercase;}
+.viaje{margin-left: 50px;color:#c64832;font-family:'Roboto Condensed', sans-serif;font-size: 1.5em}
+
+.fondo-inicio{
+    content: "";
+    background-image: url(../img/fondo-inicio.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.logo-home{
+    display: inline-block;
+    width: 100%;
+}
+.logo-home img{
+    display: block;
+}
+/*------ MENU ------*/
+
+
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+    opacity:0.9;    
+}
+
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+/*
+ * Card component
+ */
+.card {
+    position: relative;
+    top: 20%;
+    background-color: #F7F7F7;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: auto;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;   
+}
+
+/*
+ * Form styles
+ */
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.profile-title-card{
+    font-size: 18px;
+    text-align: center;
+    color: #3e280d;
+}
+
+.reauth-email {
+    display: block;
+    color: #404040;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin #inputEmail,
+.form-signin #inputPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;    
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    border-color: rgb(104, 145, 162);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+}
+
+.btn.btn-signin {
+    /*background-color: #4d90fe; */
+    background-color: #3e280d;
+    /* background-color: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
+    padding: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    height: 36px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+
+.btn.btn-signin:hover,
+.btn.btn-signin:active,
+.btn.btn-signin:focus {
+    background-color: rgb(222, 170, 60);
+}
+
+.forgot-password {
+    color: #3e280d;
+}
+
+.forgot-password:hover,
+.forgot-password:active,
+.forgot-password:focus{
+    color: rgb(12, 97, 33);
+}
+
+/*------ FIN MENU ------*/
+
+.fondo-galeria{
+    margin-top: 10px;
+    padding:15px;
+    content: "";
+    border-radius: 7px;
+    background: url(../img/madera.png);
+    height: 230px;
+    width: 100%;
+}
+
+.selector-galeria li{
+    background-image: url(../img/polaroid.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    content: "";
+    width: 174px;
+    height: 223px;
+}
+
+.contenedor-galeria{overflow: hidden;}
+.selector-galeria li>div{
+    position: relative;
+    width: 154px;
+    height: 152px;
+    left: 5px;
+    top: 29px;
+    overflow: hidden;
+}
+
+.titulo-galeria{
+    text-align: center;
+    position: relative;
+    bottom: -40px;
+}
+
+.cual-galeria:hover{cursor:pointer;}
+
+
+.mona{
+    opacity: 0;
+    position: absolute;
+    background-image: url(../img/mona.png);
+    background-repeat: no-repeat;
+    right:24%;
+    margin-top: 25px;
+    content: "";
+    height: 505px;
+    width: 218px;
+}
+
+.video-selector li{
+    display: inline-block;
+    list-style-type: none;
+    list-style-image: url(../img/point.png);
+    content:"";
+}
+
+.video-selector div{display: block; min-width:10px; min-height: 10px; background-color: beige; border-radius: 10px; margin-right: 2px; margin-left: 2px;}
+
+.video-selector div:hover{
+    cursor:pointer;
+}
+
+.millas{  
+    height: 520px;
+    width: 100%;
+    content: "";
+    background-image: url(../img/millas.png);
+    background-position: center; 
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.millas > .contenedor{
+    margin: 0 auto;
+    margin-top: 224px;
+    display: table;
+    color: white;
+    width: 315px;
+    height: 197px;
+    
+}
+
+.millas-titulo{
+    float: left;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    text-align: justify;
+    width: 77px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 1em;
+    /*border:solid blue 1px;*/
+}
+
+.millas-total{
+    font-family: 'digital-7';
+    float: right;
+    margin-right: 23px;
+    font-size: 2.3em;
+    color: #e0a93d;
+}
+
+.degradado{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+40,595959+58,595959+68,000000+100 */
+background-image: url(../img/madera.png);
+background-size: 100% 100%;
+background-repeat: no-repeat;
+
+}
+
+.slogan{
+    color:#4b0800;
+}
+
+.titulo{font-family:'Oswald',sans-serif; text-transform: uppercase;}
+.titulo2{font-family:'Oswald',sans-serif;}
+.slogan1{font-family:'Tall Films Expanded',sans-serif; text-transform: uppercase; color:white;}
+.subtitulo{font-family:'Roboto Condensed',sans-serif; text-transform: uppercase;}
+.tabla-millas{font-family:'Oswald',sans-serif; font-size: 0.9em; }
+.m-titulo{font-family:'Oswald',sans-serif;color: #e0a93d; font-size: 1.2em; text-transform: uppercase;}
+.m-update{font-family:'Oswald',sans-serif; font-size: 0.8em; text-transform: uppercase;}
+
+.encuesta{padding:15px;background-color: white; border-radius: 8px;}
+#historia{padding-top:5px;}
+#historia span{font-family:'Oswald',sans-serif;}
+#historia:hover{cursor:pointer}

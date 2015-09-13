@@ -1,0 +1,38 @@
+/*320 480 768 1024 1080*/
+@media screen and (min-width:320px) and (max-width:479px){
+    .fondo-inicio{height: 753px;}
+    .logo-home img{margin: 165px auto;}
+    .menu a{font-size: 1em;}
+    .slogan1{font-size:1em}
+}
+@media screen and (min-width:480px) and (max-width:767px){
+    .fondo-inicio{height: 753px;}
+    .logo-home img{margin: 165px auto;}
+    .menu a{font-size: 1em;}
+    .slogan1{font-size:1em}
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    .fondo-inicio{height: 766px;}
+    .logo-home img{float:right; margin: 165px auto;}
+    .menu a{font-size: 1.2em;}
+    .slogan1{font-size:1.5em}
+    
+}
+@media screen and (min-width:1024px) and (max-width:1279px){
+    .fondo-inicio{height: 866px;}
+    .logo-home img{float:right; margin: 19% 6%;}
+    .menu a{font-size: 1.2em;}
+}
+@media screen and (min-width:1280px) and (max-width:1919px){
+    .fondo-inicio{height: 866px;}
+    .logo-home img{float:right; margin: 250px 12%;}
+    .menu a{font-size: 1.5em;}
+    .slogan1{font-size:1.5em}
+}
+
+@media screen and (min-width:1920px){
+    .fondo-inicio{height: 866px;}
+    .logo-home img{float:right; margin: 230px 12%;}
+    .menu a{font-size: 2.2em;}
+    .slogan1{font-size:1.5em}
+}
