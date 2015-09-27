@@ -57,7 +57,7 @@ $files = scandir($dir);
 sort($files,SORT_ASC);
 foreach ($files as $file) {
     if ($file != '.' && $file != '..') {
-        $content.='<li><img src="'.$dir2.'/'.$file.'" width="100%" height="460px" /></li>';
+        $content.='<li><img src="'.$dir2.'/'.$file.'" /></li>';
     }
 }
 

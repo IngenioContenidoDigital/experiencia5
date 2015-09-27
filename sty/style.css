@@ -67,6 +67,7 @@ Abel - Bloque de Contenido | font-family: 'Abel', sans-serif;*/
     }
 }
 
+html,body {height:100%;width:100%;}
 a{color:white;}
 h2{font-family: 'Tall Films Expanded'; color:#3e2d1e; font-weight: bold;}
 
@@ -74,11 +75,13 @@ h2{font-family: 'Tall Films Expanded'; color:#3e2d1e; font-weight: bold;}
     background-color: black;
 }
 
+#logo-h{margin-left:auto; margin-right: auto; display:block;}
 .header{
     display: table;
     background-image: url(../img/luces.jpg);
     margin: 0 auto;
-    height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
     background-repeat:repeat-x; 
     border:none;
@@ -86,7 +89,7 @@ h2{font-family: 'Tall Films Expanded'; color:#3e2d1e; font-weight: bold;}
 
 
 .center{
-    display: table;
+    display: block;
     margin: 0 auto;
     border:none;
 }
@@ -96,14 +99,9 @@ h2{font-family: 'Tall Films Expanded'; color:#3e2d1e; font-weight: bold;}
 
 
 .footer{
-    display: table;
     background-image: url(../img/footer.png);
-    margin: 0 auto;
     padding:15px;
-    min-height: 183px;
-    width: 100%;
-    /*background-repeat:repeat-y; */
-    border:none;
+    /*border:none;*/
 }
 
 .logo-footer{margin-top: 25px; border-left: 1px solid lightgray; border-right: 1px solid lightgray; width: 160px;}
@@ -150,8 +148,8 @@ h2{font-family: 'Tall Films Expanded'; color:#3e2d1e; font-weight: bold;}
 #img-chat{margin-top: 35px;}
 .atencion{color:#e0a93d !important; font-size:1.2em;}
 .servicio{float:left;}
+.menu{margin-left: auto; margin-right: auto; display: table;}
 .menu a{margin-top: 10px; margin-bottom: 10px; font-family: 'Oswald', sans-serif;}
-.altura{min-height: 670px;}
 .carrete{
     background-image: url(../img/carrete.png);
     background-repeat: repeat-y;
@@ -166,12 +164,10 @@ h2{font-family: 'Tall Films Expanded'; color:#3e2d1e; font-weight: bold;}
 }
 .right{
     float:right;
-    width: 10%;
+    width: 8%;
 }
 
 .left-inf{
-    float:left;
-    width: 8%;
     -webkit-animation-name: pelicula;
     -webkit-animation-duration: 10000ms;
     -webkit-animation-iteration-count: infinite;
@@ -193,8 +189,6 @@ h2{font-family: 'Tall Films Expanded'; color:#3e2d1e; font-weight: bold;}
     animation-timing-function: linear;
 }
 .right-inf{
-    float:right;
-    width: 10%;
     -webkit-animation-name: pelicula;
     -webkit-animation-duration: 10000ms;
     -webkit-animation-iteration-count: infinite;
@@ -239,27 +233,20 @@ h2{font-family: 'Tall Films Expanded'; color:#3e2d1e; font-weight: bold;}
 
 
 .separador{
-    display: table;
+    display:block;
     content:"";
     height: 5px;
-    width: 100%;
     background-color: #4b0800;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0;
 }
 .centro-logo{
     text-align: center;
 }
 .cuerpo{
-    margin: 0;
-    padding: 0;
     background-image: url(../img/fondo-cuerpo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
-    height: 0px;
-    /*height: 520px; ELIMINAR ESTA LINEA Y QUITAR COMENTARIO EN LA ANTERIOR*/
-    width: 100%;
     overflow:hidden;
 }
 
@@ -267,7 +254,6 @@ h2{font-family: 'Tall Films Expanded'; color:#3e2d1e; font-weight: bold;}
     margin-top: 1%;
     content: "";
     border-top: solid gray 2px;
-    width: 62%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -304,12 +290,10 @@ h2{font-family: 'Tall Films Expanded'; color:#3e2d1e; font-weight: bold;}
     font-size: 1.2em;
     text-align: justify;
     float:left;
-    width:63%;
 }
 
 .texto div:nth-child(2){
     float:left;
-    width:100%;
     maring-top:15px;
 }
 
@@ -498,7 +482,7 @@ h2{font-family: 'Tall Films Expanded'; color:#3e2d1e; font-weight: bold;}
     content: "";
     border-radius: 7px;
     background: url(../img/madera.png);
-    height: 230px;
+    height: 260px;
     width: 100%;
 }
 

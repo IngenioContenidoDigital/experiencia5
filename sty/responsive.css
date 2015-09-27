@@ -2,37 +2,88 @@
 @media screen and (min-width:320px) and (max-width:479px){
     .fondo-inicio{height: 753px;}
     .logo-home img{margin: 165px auto;}
-    .menu a{font-size: 1em;}
-    .slogan1{font-size:1em}
+    .menu a{font-size: 0.9em;}
+    #logo-h{width: 60%; height: 60%;}
+    #espacio img{width:100%;height:180px}
+    .altura{min-height: 350px;}
+    .mona{visibility: hidden;}
+    .texto div{width:95%;}
+    .menu{line-height: 0.1;}
+    .carrete{background-size: 50%;}
 }
 @media screen and (min-width:480px) and (max-width:767px){
     .fondo-inicio{height: 753px;}
     .logo-home img{margin: 165px auto;}
-    .menu a{font-size: 1em;}
-    .slogan1{font-size:1em}
+    .menu a{font-size: 0.9em;}
+    #logo-h{width: 43%; height: 43%;}
+    #espacio img{width:100%;height:320px}
+    .altura{min-height: 350px;}
+    .mona{visibility: visible; right: -22px; transform: scale(0.6);}
+    .texto div{width:70%;}
+    .texto div:nth-child(2){width:95%;}
+    .menu{line-height: 0.1;}
+    .carrete{background-size: 60%;}
 }
 @media screen and (min-width:768px) and (max-width:1023px){
     .fondo-inicio{height: 766px;}
-    .logo-home img{float:right; margin: 165px auto;}
+    .logo-home img{float:right; margin: 225px auto;}
     .menu a{font-size: 1.2em;}
-    .slogan1{font-size:1.5em}
+    .bienvenida{width: 80%;}
+    #logo-h{width: 30%; height: 30%;}
+    #espacio img{width:100%;height:480px}
+    .altura{min-height: 516px;}
+    .mona{visibility: visible; right: 58px;}
+    .texto div{width:63%;}
+    .texto div:nth-child(2){width:100%;}
+    .menu{line-height: 0.5;}
+    .carrete{background-size: 60%;}
     
 }
 @media screen and (min-width:1024px) and (max-width:1279px){
     .fondo-inicio{height: 866px;}
     .logo-home img{float:right; margin: 19% 6%;}
     .menu a{font-size: 1.2em;}
+    .bienvenida{width: 80%;}
+    #logo-h{width: 30%; height: 30%;}
+    #espacio img{width:100%;height:480px}
+    .altura{min-height: 516px;}
+    .mona{visibility: visible; right: 58px;}
+    .texto div{width:63%;}
+    .texto div:nth-child(2){width:100%;}
+    .menu{line-height: 1.8;}
+    .carrete{background-size: 60%;}
+    .fondo-galeria{height: 258px;}
 }
 @media screen and (min-width:1280px) and (max-width:1919px){
     .fondo-inicio{height: 866px;}
     .logo-home img{float:right; margin: 250px 12%;}
     .menu a{font-size: 1.5em;}
-    .slogan1{font-size:1.5em}
+    .bienvenida{width: 80%;}
+    .auditorio{height: 189px;}
+    #logo-h{width: 20%; height: 20%;}
+    #espacio img{width:100%;height:480px}
+    .altura{min-height: 516px;}
+    .mona{visibility: visible; right: 140px;}
+    .texto div{width:63%;}
+    .texto div:nth-child(2){width:100%;}
+    .menu{line-height: 1.8;}
+    .carrete{background-size: 60%;}
+    .fondo-galeria{height: 258px;}
 }
 
 @media screen and (min-width:1920px){
     .fondo-inicio{height: 866px;}
     .logo-home img{float:right; margin: 230px 12%;}
     .menu a{font-size: 2.2em;}
-    .slogan1{font-size:1.5em}
+    .bienvenida{width: 80%;}
+    .auditorio{height: 225px;}
+    #logo-h{width: 15%; height: 15%;}
+    #espacio img{width:100%;height:720px}
+    .altura{min-height: 830px;}
+    .mona{visibility: visible; right: 170px;}
+    .texto div{width:63%;}
+    .texto div:nth-child(2){width:100%;}
+    .menu{line-height: 1.8;}
+    .carrete{background-size: 60%;}
+    .fondo-galeria{height: 258px;}
 }

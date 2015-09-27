@@ -30,38 +30,29 @@ if(!isset($_SESSION['usuario'])){
     <script type="text/javascript" src="ext/jquery-ui/jquery-ui.min.js"></script>
   </head>
   <body class="fondo">
-      <!--<div class="container">-->
-          <div class="row header">
-              <div class="col-md-12">
-                  <div class="center"><img src="img/logo-2.png" alt=""/></div>
-                  <!--<br>
-                  <div class="center"><div class="subtitulo slogan1">&#xa1;Tu Historia es nuestra historia!</div></div>-->
-              </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header">
+            <div class="center"><img id="logo-h" src="img/logo-2.png" alt=""/></div>
+        </div>
+    </div>
+    <div class="row separador"></div>
+          <div class="row">  
+            <div class="left carrete altura left-inf"></div>
+            <div class="center2 altura">
+                  <?php
+                      include ('menu.php');
+                  ?>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="center contenido intro" id="espacio"></div>
+                        <div class="center auditorio"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right carrete altura right-inf"></div>
           </div>
-          <div class="separador"></div>
-          <div class="row">
-              <div class="col-md-2"></div>
-              <div class="col-md-8">
-                  <div class="left carrete altura left-inf"></div>
-                  <div class="center2 altura">
-                      <div class="center">
-                        <?php
-                            include ('menu.php');
-                        ?>
-                      </div>
-                      <div class="row">
-                          <div class="col-md-12">
-                              <div class="center contenido intro" id="espacio"></div>
-                              <div class="center auditorio"></div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="right carrete altura right-inf"></div>
-              </div>
-              <div class="col-md-2"></div>
-          </div>
-          <div class="separador"></div>
-          <div class="cuerpo">
+          <div class="row separador"></div>
+          <div class="row cuerpo">
               <!-- Inicio -->
               <div class="mona"></div>
               <div class="bienvenida">
@@ -201,7 +192,7 @@ if(!isset($_SESSION['usuario'])){
           
           $(document).ready(function(){
               $('.encuesta').hide();
-              $('#espacio').html('<img src="img/intro.gif" width="100%" height="460px" alt="" />');
+              $('#espacio').html('<img src="img/intro.gif" alt="" />');
               $('.bienvenida2').hide();
               $('.galeria').hide();
               $('.cuerpo').animate({height:'750px'},3000);
@@ -262,7 +253,16 @@ if(!isset($_SESSION['usuario'])){
               $('.cuerpo').hide();
               $('.bn-slider').hide();
               //$('#espacio').html('<iframe width="100%" height="460px" src="https://www.youtube.com/embed/9Mde1prbSIk?autoplay=1" frameborder="0" allowfullscreen ></iframe>');
-              $('#espacio').html('<video id="video" width="100%" height="460px" controls autoplay onended="prueba(2);"><source id="video-src" src="media/bienvenida.mp4" type="video/mp4">Su Navegador no soporta Video</video>'); 
+              var ancho = $(window).width();
+              var video = 180
+              if ((ancho>=320) && (ancho<480)){video=180;}
+              if ((ancho>=480) && (ancho<768)){video=320;}
+              if ((ancho>=768) && (ancho<1024)){video=480;}
+              if ((ancho>=1024) && (ancho<1280)){video=480;}
+              if ((ancho>=1280) && (ancho<1920)){video=480;}
+              if (ancho>=1920){video=720;}
+              
+              $('#espacio').html('<video id="video" width="100%" height="'+video+'px" controls autoplay onended="prueba(2);"><source id="video-src" src="media/bienvenida.mp4" type="video/mp4">Su Navegador no soporta Video</video>'); 
           });
           
           $('.milas').click(function(){
@@ -298,7 +298,7 @@ if(!isset($_SESSION['usuario'])){
                                     '<div class="row"><span class="m-update">'+updt+'</span></div>'+
                                 '</div>'+
                                 '<div class="col-xs-4" style="text-align:center;"><span class="m-titulo">'+response.month+'</span></div>'+
-                                '<div class="col-xs-4" style="text-align:center;"><div class="center" id="historia"><span>Extracto </span><a href="controllers/HistoryController.php"><img src="img/extracto.png" /></a></div></div>'+
+                                '<div class="col-xs-4" style="text-align:center;"><div class="center" id="historia"><span>Extracto </span><a href="controllers/HistoryController.php"><img style="width:20px; height:20px;" src="img/extracto.png"/></a></div></div>'+
                             '</div>'+
                             '<div class="row" style="height:70px; padding-top:9px;">'+
                                 '<div class="col-xs-12"><div class="millas-total"></div></div>'+
@@ -340,11 +340,20 @@ if(!isset($_SESSION['usuario'])){
               $('#espacio').removeClass('intro');
               Contenido('lanzamiento');
               $('.galeria').show();
+              
+              var ancho = $(window).width();
+              var galery = 1
+              if ((ancho>=320) && (ancho<480)){galery=1;}
+              if ((ancho>=480) && (ancho<768)){galery=1;}
+              if ((ancho>=768) && (ancho<1024)){galery=2;}
+              if ((ancho>=1024) && (ancho<1280)){galery=3;}
+              if ((ancho>=1280) && (ancho<1920)){galery=4;}
+              if (ancho>=1920){galery=6;}
               $('.sl-slider').bxSlider({
                   mode: 'horizontal',
                   pager: false,
-                  minSlides: 4,
-                  maxSlides: 4,
+                  minSlides: galery,
+                  maxSlides: galery,
                   slideWidth: 174,
                   slideMargin: 12
               });
