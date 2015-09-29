@@ -45,7 +45,7 @@
     .menu a{font-size: 1.2em;}
     .bienvenida{width: 80%;}
     #logo-h{width: 30%; height: 30%;}
-    #espacio img{width:100%;height:480px}
+    #espacio img{width:80%;height:480px; margin-left: auto; margin-right: auto; display:table;}
     .altura{min-height: 516px;}
     .mona{visibility: visible; right: 58px;}
     .texto div{width:63%;}
@@ -61,8 +61,8 @@
     .bienvenida{width: 80%;}
     .auditorio{height: 189px;}
     #logo-h{width: 20%; height: 20%;}
-    #espacio img{width:100%;height:480px}
-    .altura{min-height: 516px;}
+    #espacio img{width:80%;height:720px; margin-left: auto; margin-right: auto; display:table;}
+    .altura{min-height: 810px;}
     .mona{visibility: visible; right: 140px;}
     .texto div{width:63%;}
     .texto div:nth-child(2){width:100%;}
@@ -78,8 +78,8 @@
     .bienvenida{width: 80%;}
     .auditorio{height: 225px;}
     #logo-h{width: 15%; height: 15%;}
-    #espacio img{width:100%;height:720px}
-    .altura{min-height: 830px;}
+    #espacio img{width:80%;height:720px; margin-left: auto; margin-right: auto; display:table;}
+    .altura{min-height: 810px;}
     .mona{visibility: visible; right: 170px;}
     .texto div{width:63%;}
     .texto div:nth-child(2){width:100%;}

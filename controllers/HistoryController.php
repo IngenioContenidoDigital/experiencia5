@@ -8,10 +8,19 @@ require_once '../classes/html2pdf/html2pdf.class.php';
 $user=$_SESSION['usuario'];
 
 $db = new Database();
-$db->query("SELECT * FROM h0xce_csv WHERE username=:username");
+$db->query("SELECT * FROM h0xce_csv WHERE username=:username ORDER BY up_date DESC");
 $db->bind(':username', $user);
-$result=$db->single();
-
+$result=$db->resultset();
+$cadena="";
+$goal=0;
+$total_miles=0;
+$miles_additional=0;
+foreach ($result as $row => $link) {
+    $cadena.="<tr><td class='first'><span>Millas mes de ".$link['month']."</span></td><td><span>$ ".number_format($link['month_sales_goal'],0,",",".")."</span></td><td><span>".number_format((($link['current_sales']/$link['month_sales_goal'])*100),2,",",".")." %</span></td><td><span>".number_format($link['accumulated'],0,",",".")."</span></td></tr>";
+    $goal=$link['goal'];
+    $total_miles+=$link['accumulated'];
+    $miles_additional+=$link['miles_additional'];
+}
 $total=$db->rowCount();
 
 if($total>0){
@@ -73,23 +82,22 @@ if($total>0){
     <br>
     <br>
     <table cellspacing='0' class='resumen'>
-        <tr><td><span>Meta millas Experiencia:</span></td><td><div style='color:red;'>".number_format($result['goal'],0,",",".")."</div></td></tr>
-        <tr><td><span>Total millas acumuladas:</span></td><td><div>".number_format($result['total_miles'],0,",",".")."</div></td></tr>
-        <tr><td><span>Millas adicionales Viniltex:</span></td><td><div>".number_format($result['miles_additional'],0,",",".")."</div></td></tr>
+        <tr><td><span>Meta millas Experiencia:</span></td><td><div style='color:red;'>".number_format($goal,0,",",".")."</div></td></tr>
+        <tr><td><span>Total millas acumuladas:</span></td><td><div>".number_format($total_miles,0,",",".")."</div></td></tr>
+        <tr><td><span>Millas adicionales Viniltex:</span></td><td><div>".number_format($miles_additional,0,",",".")."</div></td></tr>
     </table>
     <br>
     <br>
     <table cellspacing='0' style='margin-left:30px;'>
         <thead class='titulo'><tr><td><span>ACTIVIDAD</span></td><td><span>PRESUPUESTO</span></td><td><span>% CUMPLIMIENTO</span></td><td><span>MILLAS ALCANZADAS</span></td></tr></thead>
-        <tbody class='cuerpo'>
-        <tr><td class='first'><span>Millas mes de ".MesAnt($result['month'])." Experiencia</span></td><td><span>$ ".number_format($result['ant_sales_goal'],0,",",".")."</span></td><td><span>".number_format((($result['current_sales']/$result['month_sales_goal'])*100),2,",",".")." %</span></td><td><span>".number_format($result['ant_miles'],0,",",".")."</span></td></tr>
-        <tr><td class='first'><span>Millas mes de ".$result['month']." Experiencia</span></td><td><span>$ ".number_format($result['month_sales_goal'],0,",",".")."</span></td><td><span>".number_format((($result['ant_sales']/$result['ant_sales_goal'])*100),2,",",".")." %</span></td><td><span>".number_format($result['accumulated'],0,",",".")."</span></td></tr>
-        </tbody>
+        <tbody class='cuerpo'>";
+        $content.=$cadena;        
+        $content.="</tbody>
     </table>
     <hr>
 </page>";
 
-    $html2pdf = new HTML2PDF('L','A5','fr');
+    $html2pdf = new HTML2PDF('P','A4','fr');
     $html2pdf->WriteHTML($content);
     $html2pdf->Output('extracto.pdf');
 }else{   
