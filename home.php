@@ -59,9 +59,28 @@ if(!isset($_SESSION['usuario'])){
                   <div class="row">
                       <div>
                           <h3 class="vamos titulo">AS&Iacute; INICIAMOS</h3>
-                          <h5 class="viaje titulo">Lleg&oacute; Mundial</h5>
+                          <h5 class="viaje titulo">!Tu historia es nuestra historia&iexcl;</h5>
                       </div>
                       <div class="texto">
+                          <div><b>Colombia</b> crec&iacute;a r&aacute;pidamente y hac&iacute;a mucha falta una buena f&aacute;brica de pinturas.
+                              <br><br>
+                              La mayor&iacute;a de las casas eran todas ancaladas o pintadas con bolo que solo ven&iacute;a en 2 colores: amarillo o rosado guayaba.
+                              <br><br>
+                              Unos pocos ricos hab&iacute;an hecho su casa con ladrillo, revocaban con cemento y arena, y las pintaban al &oacute;leo.
+                              <br><br>
+                              <b style="color:#e0a93d;">Don Germ&aacute;n sali&oacute; a Nueva York en busca de un aliado y se top&oacute; con Peter Grace, quien acept&oacute; ser su socio.</b>
+                          <br><br>
+                          Al momento de la negociaci&oacute;n, Grace llevaba un contrato ya redactado en el que el due&ntilde;o mayoritario (51%) era la compa&ntilde;ia Grace...
+                          <br><br>
+                          <b>Don Germ&aacute;n</b> con su astucia particular sac&oacute; sus dotes de negociantes y volte&oacute; la propuesta para que fuera &eacute;l quien tuviera el mayor porcentaje de participaci&oacute;n de la empresa.
+                          </div>
+                          <div>
+                              <i>Y as&iacute; en <b>1945</b> se fund&oacute; Pintuco con un capital de $ 500.000</i>
+                          <br>
+                          <i>Si las anteriores experiencias fueron inolvidables, esta ser&aacute; <b>MEMORABLE. Estos 70 a&ntilde;os los celebraremos con alma, vida y sombrero.</b></i>
+                          </div>
+                      </div>
+                      <!--<div class="texto">
                           <div><b>Lleg&oacute; Mundial</b> gritaban los agentes de ventas anunciando su llegada a la plaza del pueblo... Los agentes eran todos amigos de los comerciantes, serviciales, bien educados, simp&aacute;ticos y sin pereza.
                               <br><br>
                               La Mundial se propuso desde el comienzo atender bien a sus clientes, pensando siempre en serles de utilidad y pagar cumplidamente a los proveedores.
@@ -78,7 +97,7 @@ if(!isset($_SESSION['usuario'])){
                           <br>
                           <i>Pintuco te invita a vivir la mejor de las <b>EXPERIENCIAS. Porque tu historia es nuestra historia queremos celebrar contigo los 70 a&ntilde;os que llevamos pintando a Colombia con el color de la calidad.</b></i>
                           </div>
-                      </div>
+                      </div>-->
                       <br>
                       <!--<div class="btn-group" role="group" aria-label="...">
                           <button type="button" class="btn btn-default milas" ><b>VER MILLAS</b></button>
@@ -262,7 +281,7 @@ if(!isset($_SESSION['usuario'])){
               if ((ancho>=1280) && (ancho<1920)){video=480;}
               if (ancho>=1920){video=720;}
               
-              $('#espacio').html('<video id="video" width="100%" height="'+video+'px" controls autoplay onended="prueba(2);"><source id="video-src" src="media/bienvenida.mp4" type="video/mp4">Su Navegador no soporta Video</video>'); 
+              $('#espacio').html('<video id="video" width="100%" height="'+video+'px" controls autoplay onended="prueba(2);"><source id="video-src" src="media/experiencia5.mp4" type="video/mp4">Su Navegador no soporta Video</video>'); 
           });
           
           $('.milas').click(function(){
@@ -320,9 +339,12 @@ if(!isset($_SESSION['usuario'])){
           function prueba(vd){
             switch (vd){
                 case 1:
-                    $('#espacio').html('<video id="video" width="100%" height="460px" controls autoplay onended="prueba(2);"><source id="video-src" src="media/bienvenida.mp4" type="video/mp4">Su Navegador no soporta Video</video>'); 
+                    $('#espacio').html('<video id="video" width="100%" height="460px" controls autoplay onended="prueba(2);"><source id="video-src" src="media/experiencia5.mp4" type="video/mp4">Su Navegador no soporta Video</video>'); 
                     break;
                 case 2:
+                    $('#espacio').html('<video id="video" width="100%" height="460px" controls autoplay onended="prueba(3);"><source id="video-src" src="media/bienvenida.mp4" type="video/mp4">Su Navegador no soporta Video</video>'); 
+                    break;
+                case 3:
                     $('#espacio').html('<video id="video" width="100%" height="460px" controls autoplay onended="prueba(1);"><source id="video-src" src="media/invitacion.mp4" type="video/mp4">Su Navegador no soporta Video</video>'); 
                     break;
             } 

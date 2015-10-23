@@ -15,7 +15,7 @@ h0xce_csv.month FROM h0xce_csv
 WHERE h0xce_csv.username =:username1 AND h0xce_csv.month =:month");
 $db->bind(':username', $user);
 $db->bind(':username1', $user);
-$db->bind(':month', 'Septiembre');
+$db->bind(':month', 'Octubre');
 $result=$db->single();
 $total=$db->rowCount();
 
