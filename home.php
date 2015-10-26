@@ -62,22 +62,19 @@ if(!isset($_SESSION['usuario'])){
                           <h5 class="viaje titulo">!Tu historia es nuestra historia&iexcl;</h5>
                       </div>
                       <div class="texto">
-                          <div><b>Colombia</b> crec&iacute;a r&aacute;pidamente y hac&iacute;a mucha falta una buena f&aacute;brica de pinturas.
+                          <div>En <b>1948</b> las latas de pintura revolucionan el mercado, proporcionando un mejor rendimiento para el consumidor.
                               <br><br>
-                              La mayor&iacute;a de las casas eran todas ancaladas o pintadas con bolo que solo ven&iacute;a en 2 colores: amarillo o rosado guayaba.
+                              En este tiempo las pinturas comienzan a producirse en Colombia. Los productos que se produc&iacute;an eran esmaltes sint&eacute;ticos y dom&eacute;sticos, base para esmalte, pintura emulsi&oacute;n, barnices, aceite de linaza y disolvente Pintuco.
                               <br><br>
-                              Unos pocos ricos hab&iacute;an hecho su casa con ladrillo, revocaban con cemento y arena, y las pintaban al &oacute;leo.
+                              <b>Si las anteriores experiencias fueron inolvidables, esta ser&aacute; MEMORABLE.</b>
                               <br><br>
-                              <b style="color:#e0a93d;">Don Germ&aacute;n sali&oacute; a Nueva York en busca de un aliado y se top&oacute; con Peter Grace, quien acept&oacute; ser su socio.</b>
+                              En el segundo semestre del 2015, enfoca todos tus esfuerzos y estrategias de negocio en acumular las millas que m&aacute;s puedas.
                           <br><br>
-                          Al momento de la negociaci&oacute;n, Grace llevaba un contrato ya redactado en el que el due&ntilde;o mayoritario (51%) era la compa&ntilde;ia Grace...
-                          <br><br>
-                          <b>Don Germ&aacute;n</b> con su astucia particular sac&oacute; sus dotes de negociantes y volte&oacute; la propuesta para que fuera &eacute;l quien tuviera el mayor porcentaje de participaci&oacute;n de la empresa.
+                          <b>Pintuco te invita a vivir la mejor de las EXPERIENCIAS.
                           </div>
                           <div>
-                              <i>Y as&iacute; en <b>1945</b> se fund&oacute; Pintuco con un capital de $ 500.000</i>
                           <br>
-                          <i>Si las anteriores experiencias fueron inolvidables, esta ser&aacute; <b>MEMORABLE. Estos 70 a&ntilde;os los celebraremos con alma, vida y sombrero.</b></i>
+                          <i>Porque tu historia es nuestra historia queremos celebrar contigo los 70 a&ntilde;os que llevamos pintando a Colombia con el color de la calidad.</b></i>
                           </div>
                       </div>
                       <!--<div class="texto">
