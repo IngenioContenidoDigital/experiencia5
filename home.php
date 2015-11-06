@@ -58,23 +58,23 @@ if(!isset($_SESSION['usuario'])){
               <div class="bienvenida">
                   <div class="row">
                       <div>
-                          <h3 class="vamos titulo">AS&Iacute; INICIAMOS</h3>
-                          <h5 class="viaje titulo">!Tu historia es nuestra historia&iexcl;</h5>
+                          <h3 class="vamos titulo">!Tu historia es nuestra historia&iexcl;</h3>
+                          <h5 class="viaje titulo">"El Mejor negocio del mundo es ser honrado"</h5>
                       </div>
                       <div class="texto">
-                          <div>En <b>1948</b> las latas de pintura revolucionan el mercado, proporcionando un mejor rendimiento para el consumidor.
+                          <div>Hace <b>120 a&ntilde;os</b> naci&oacute; Don Germ&aacute;n Saldarriaga de Valle, fundador de la Cacharrer&iacute;a Mundial, Pintuco y Andercol, empresas que con el tiempo se convirtieron en lo que hoy es el grupo Orbis.
                               <br><br>
-                              En este tiempo las pinturas comienzan a producirse en Colombia. Los productos que se produc&iacute;an eran esmaltes sint&eacute;ticos y dom&eacute;sticos, base para esmalte, pintura emulsi&oacute;n, barnices, aceite de linaza y disolvente Pintuco.
+                              Hoy vale la pena reconocer la mejor figura de Don Germ&aacute;n. Su vida estuvo llena de experiencias y lecciones que hoy siguen vigentes: Adem&aacute;s de ser un ejemplar hombre de familia, empresario, ciudadano y fil&aacute;ntropo, don Germ&aacute;n se distingui&oacute; por ser un gran vendedor. Su esp&iacute;ritu comercial lo hac&iacute;a satisfacer a sus clientes en cada transacci&oacute;n, y lo mov&iacute;a a ir m&aacute;s all&aacute; de simplemente entregar un producto.
                               <br><br>
-                              <b>Si las anteriores experiencias fueron inolvidables, esta ser&aacute; MEMORABLE.</b>
+                              La honradez y la integridad en los negocios eran su faro y br&uacute;jula, as&iacute; como la ayuda a los m&aacute;s necesitados:
                               <br><br>
-                              En el segundo semestre del 2015, enfoca todos tus esfuerzos y estrategias de negocio en acumular las millas que m&aacute;s puedas.
+                              <b>"Se honrado es el mejor negocio del mundo, por la sola satisfacci&oacute;n de serlo, por sus consecuencias extr&iacute;nsecas y por la invaluable tranquilidad &iacute;ntima de uno saberse as&iacute;... La verdad es una consecuencia l&oacute;gica de honradez, pero es tan importante en la vida ordinaria y en la de los negocios, que vale la pena insistir en su pr&aacute;ctica constante e invariable. Quien miente, est&aacute; girando en rojo sobre su prestigio y quien dice siempre la verdad est&aacute; acumulando cr&eacute;ditos para sus seguros triunfos futuros."</b>
                           <br><br>
-                          <b>Pintuco te invita a vivir la mejor de las EXPERIENCIAS.
+                          <!--<b>Pintuco te invita a vivir la mejor de las EXPERIENCIAS.</b>-->
                           </div>
                           <div>
                           <br>
-                          <i>Porque tu historia es nuestra historia queremos celebrar contigo los 70 a&ntilde;os que llevamos pintando a Colombia con el color de la calidad.</b></i>
+                          <i>Si las anteriores experiencias fueron inolvidables, esta ser&aacute; MEMORABLE. Estos 70 a&ntilde;os los celebraremos con alma, vida y sombrero.</b></i>
                           </div>
                       </div>
                       <!--<div class="texto">
